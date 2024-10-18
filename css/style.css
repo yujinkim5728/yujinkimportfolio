@@ -1,0 +1,633 @@
+#hamburger{
+    display: none;
+}
+
+.intro_section .container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.intro_section{
+    /* height: 100vh; */
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 120px;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    border-bottom: 1px solid #222;
+
+}
+
+.header .main_menu{
+    display: flex;
+    margin-right: -100px;
+}
+
+.header .menu{
+    font-weight: 500;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.text_box{
+    width: 200%;
+    height: 50px;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 50px;
+}
+
+.intro_text{
+    height: 100%;
+    font-size: 1.5rem;
+
+    transition: 0.3s;
+}
+
+.text_box .animate_slider_wrap{
+    display: flex;
+    overflow: hidden;
+}
+
+.text_box .animate_slider{
+    display: flex;
+    animation: slider 20s linear infinite;
+
+}
+
+@keyframes slider{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-120%);
+    }
+}
+
+.text_box .animate_slider span{
+    display: flex;
+}
+
+
+/* ------------------------------------------------------- */
+/* 공통영역 */
+.section .container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 300px;
+
+}
+
+.headtext{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;  
+    margin-bottom: 48px;
+    padding-bottom: 6px;
+    text-align: center;
+    /* display: inline-block; */
+}
+
+
+
+/* -------------------------------------------------------------- */
+.profile_box{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 68px;
+}
+
+.profile_box .profile_img{
+    width: 50%;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+.profile_box .profile_text{
+    height: 500px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* ----------------------------------------------------------------- */
+
+.portfolio_section .portfolio{
+    padding: 0 80px;
+}   
+
+.portfolio_section .portfolio_top,
+.portfolio_section .portfolio_bottom{
+    display: flex;
+    margin-right: -20px;
+
+    position: relative;
+}
+
+
+.portfolio_section .portfolio_top .port{
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.portfolio_section .portfolio_bottom .port{
+    width: calc(33.333% - 20px);
+    /* margin-bottom: 200px; */
+    margin-right: 20px;
+    height: 220px;
+    cursor: pointer;
+
+}
+
+.portfolio_section .port{
+    position: relative;
+}
+
+.portfolio_section .port .port_detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.portfolio_section .port_detail .port_inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_section .port_detail .headname{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.portfolio_section .port_detail .underline{
+    border-bottom: 1px solid #fff;
+}
+
+.portfolio_section .port_detail .subname{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.portfolio_section .port_detail .date{
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.portfolio_section .port:hover .port_detail{
+    opacity: 1;
+}
+
+/* --------------------------------------------- */
+.ability p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.icon_box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: -12px;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+}
+
+.icon img{
+    object-fit: contain;
+}
+
+
+/* ------------------------------------------ */
+.barcode_box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+.barcode_box img{
+    width: 500px;
+}
+
+.contact .email{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+/* ------------------------------------------- */
+.sec_3 p,
+.sec_4 p{
+    font-size: 1rem;
+    margin-bottom: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.sec_3 .img_box {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* ------------------------ */
+.top_btn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.top_btn.scroll{
+    opacity: 1;
+    z-index: 9999;
+}
+
+/* -------------------------------------- */
+/* 반응형 미디어쿼리 */
+@media (max-width: 1600px){
+    .intro_section .container,
+    .section .container,
+    .contact .container{
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .section .container,
+    .contact .container{
+        margin-bottom: 160px;
+    }
+
+    .text_box{
+        width: 300%;
+    }
+
+    .intro_text{
+        height: 100%;
+        font-size: 1rem;
+    
+        transition: 0.3s;
+    }
+
+}
+
+/* --------------------------------------------- */
+@media (max-width: 1420px){
+
+
+    .section .container{
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .headtext{
+        font-size: 1.5rem;  
+        margin-bottom: 38px;
+        padding-bottom: 6px;
+    }
+
+    .intro_section{
+        margin-bottom: 60px;
+    }
+
+
+    .profile_box .profile_img{
+        width: 70%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .profile_box .profile_text{
+        height: 500px;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-right: 0px;
+    }
+
+    .portfolio_section .portfolio_top .port{
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 300px;
+    }
+    
+    .portfolio_section .portfolio_bottom .port{
+        width: calc(33.333% - 10px);
+        margin-right: 10px;
+        height: 160px;
+    }
+
+    .barcode_box img{
+        width: 400px;
+    }
+
+    .sec_3 .img_box {
+        width: 700px;
+    }
+
+    /* ---------------------------- */
+    @media (max-width: 960px){
+
+        .header{
+            height: 60px;
+        }
+
+        .intro_text{
+            font-size: 0.875rem;
+        }
+
+        .profile_box .profile_img{
+            width: 100%;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    
+        .profile_box .profile_text{
+            height: 400px;
+            font-size: 0.825rem;
+            line-height: 1.5;
+        }
+
+        .ability p{
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .icon{
+            width: 50px;
+            height: 50px;
+            margin-right: 12px;
+        }
+
+        .portfolio_section .portfolio{
+            padding: 0;
+        }   
+
+        .barcode_box img{
+            width: 300px;
+        }
+        .sec_3 p,
+        .sec_4 p{
+            font-size: 0.75rem;
+        }
+        .sec_3 .img_box {
+            width: 100%;
+        }
+    
+    }
+    /* ------------------------------------- */
+    @media (max-width: 760px){
+        .headtext{
+            font-size: 1.2rem;  
+            margin-bottom: 18px;
+            padding-bottom: 6px;
+        }
+
+     .contact .container{
+            margin-bottom: 100px;
+        }
+
+        .header .main_menu{
+            margin-right: -80px;
+        }
+        .header .menu{
+            font-weight: 400;
+            margin-right: 80px;
+        }
+        
+        .header {
+            height: 50px;
+        }
+        .text_box{
+            width: 600%;
+        }
+
+        .section .container{
+            width: 100%;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 80px;
+        }
+
+        .profile_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 68px;
+        }
+        .profile_box .profile_img{
+            width: 100%;
+            margin-right: 80px;
+            margin-left: 80px;
+        }
+        
+        .profile_box .profile_text{
+            height: 300px;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .barcode_box{
+            margin-bottom: 60px;
+        }
+
+        .barcode_box img{
+            width: 250px;
+        }
+
+        .contact .email{
+            font-size: 0.75rem;
+            font-weight: 300;
+            text-align: center;
+        }
+        
+
+        
+        .portfolio_section .portfolio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }   
+
+        .portfolio_section .portfolio_top,
+        .portfolio_section .portfolio_bottom{
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+        }
+
+
+        .portfolio_section .portfolio_top .port{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 80px;
+            height: 300px;
+        }
+
+        .portfolio_section .portfolio_bottom .port{
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 80px;
+            height: 230px;
+        }
+
+        /* 호버막아줌 */
+        .portfolio_section .port{
+            pointer-events: none;
+        }
+
+        .portfolio_section .port_detail .underline{
+            border-right: 1px solid #c7c6c6;
+        }
+
+        .portfolio_section .port .port_detail{
+            position: static;
+            height: auto;
+            opacity: 1;
+            background-color: transparent;
+            color: #222;
+        }
+
+        .portfolio_section .port .port_inner{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            width: 100%;
+            padding: 6px 0;
+        }
+
+        .portfolio_section .port_detail .headname{
+            font-size: 0.75rem;
+            margin-bottom: 0px;
+            font-weight: 400;
+            padding: 0 10px;
+
+        }
+        
+        .portfolio_section .port_detail .subname{
+            font-size: 0.75rem;
+            margin-bottom: 0px;
+            font-weight: 300;
+            margin-right: 100px;
+        }
+
+        .portfolio_section .port_detail .date{
+            font-size: 0.75rem;
+            margin-bottom: 0px;
+            font-weight: 300;
+        }
+
+        
+
+        .sec_3 p,
+        .sec_4 p{
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    /* ----------------------------------- */
+    @media (max-width: 550px){
+        .section .container{
+            width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-bottom: 80px;
+        }
+
+        .header .main_menu{
+            margin-right: -40px;
+        }
+        .header .menu{
+            font-weight: 400;
+            margin-right: 40px;
+        }
+
+        .profile_box .profile_text{
+            height: 200px;
+            font-size: 0.75rem;
+            line-height: 1.5;
+            margin-bottom: 36px;
+        }
+
+        .barcode_box{
+            margin-bottom: 60px;
+        }
+        
+        .barcode_box img{
+            width: 200px;
+        }
+
+        .portfolio_section .port_detail .headname{
+            padding: 0 6px;
+
+        }
+        .portfolio_section .port_detail .subname{
+            margin-right: 70px;
+        }
+    }
+    
+}
